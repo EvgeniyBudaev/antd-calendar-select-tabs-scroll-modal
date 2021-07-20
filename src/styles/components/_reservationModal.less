@@ -1,0 +1,37 @@
+.reservation_modal {
+    .ant-modal-body {
+        background-image: url("../../images/reserv-bg.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .ant-modal-close-x {
+        color: @light-gray;
+    }
+    .ant-calendar-picker {
+        width: 300px !important;
+    }
+}
+.reserv_buttons-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.reserv_car-title {
+    color: @light-gray;
+    font-size: 22px;
+    font-weight: 700;
+}
+.reserv_message {
+    color: @light-gray;
+    font-size: 15px;
+    margin: 20px 0 10px 0;
+}
+
+@media (min-width: 700px) {
+    .reservation_modal {
+        .ant-calendar-picker {
+            width: 350px;
+        }
+    }
+}

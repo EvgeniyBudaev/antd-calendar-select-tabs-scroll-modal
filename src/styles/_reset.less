@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    .fonts();
+    overflow: hidden;
+    font-size: 14px;
+    .ant-calendar-picker-container {
+        left: 4%;
+    }
+    .ant-calendar-date-panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .ant-calendar-range {
+        width: 300px;
+    }
+    .ant-calendar-range-part {
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        .ant-calendar-date-panel {
+            flex-direction: row;
+        }
+        .ant-calendar-range {
+            width: 552px;
+        }
+        .ant-calendar-range-part {
+            width: 50%;
+        }
+    }
+}

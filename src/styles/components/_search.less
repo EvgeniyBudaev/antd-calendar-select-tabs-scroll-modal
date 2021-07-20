@@ -1,0 +1,35 @@
+.search__tabs {
+    display: flex;
+}
+.search__tab {
+    background: @background2;
+    padding: 2px 10px;
+}
+.search__tab-active {
+    background: @dark-gray;
+    color: @primary;
+}
+.search__body {
+    background: @dark-gray;
+    color: @background2;
+    padding: 10px;
+}
+.search__see-all-button {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: @light-gray;
+    margin-left: 10px;
+}
+.search__selector {
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+@media (min-width: 768px){
+    .search__selector-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}

@@ -1,0 +1,63 @@
+.details__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.details-top__save {
+    cursor: pointer;
+}
+.details-top__icon {
+    cursor: pointer;
+    margin-right: 5px;
+    color: white;
+}
+.details-top__icon-red {
+    color: red;
+}
+.details__vehicle {
+    font-size: 20px;
+    font-weight: 700;
+}
+.details__reservation-button {
+    margin: 20px 0 5px 0;
+    background: transparent;
+    color: white;
+    letter-spacing: 1px;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    &:active,
+    &:focus {
+        background: transparent;
+    }
+}
+.details__reserved-button {
+    margin: 20px 0 5px 0;
+    background: rgba(255, 255, 255, 0.2);
+    color: @primary;
+    letter-spacing: 1px;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    &:active,
+    &:focus {
+        background: transparent;
+    }
+    &:disabled {
+        background: transparent;
+        color: @primary;
+        border-color: @primary;
+        &:hover {
+            background: transparent;
+            color: darken(@primary, 10%);
+            border-color: darken(@primary, 10%);
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .details__reservation-button,
+    .details__reserved-button {
+        margin: 20px 0;
+    }
+}

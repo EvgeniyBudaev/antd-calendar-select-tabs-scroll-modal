@@ -1,0 +1,120 @@
+.order__container {
+    position: relative;
+    height: 85vh;
+}
+.order__background-image-wrap {
+    position: fixed;
+    width: 90%;
+    height: 85vh;
+    z-index: 1;
+}
+.order__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.order__wrap {
+    position: absolute;
+    margin: 0 5vw;
+    padding-top: 20px;
+    width: 80vw;
+    height: 70vh;
+    overflow-y: scroll;
+    top: 8vh;
+    left: 0;
+    z-index: 2;
+    color: white;
+    scrollbar-face-color: #367CD2;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+    scrollbar-arrow-color: #FFFFFF;
+}
+/* Scrollbar */
+.order__wrap::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+.order__wrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+.order__wrap::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: @primary;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.order__vehicle {
+    font-size: 20px;
+    font-weight: 700;
+}
+.order__favorites-link {
+    color: @primary;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: lighten(@primary, 10%);
+    }
+}
+.order__image-wrap {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.order__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}
+.order__checkout {
+    background: transparent;
+    color: @primary;
+    margin: 30px 0 50px 0;
+}
+.order__note-container {
+    text-align: center;
+    padding-top: 40px;
+}
+.order__note {
+    font-size: 16px;
+}
+.order__redirect-button {
+    margin-top: 20px;
+    background: transparent;
+    color: @primary;
+    border-color: @primary;
+    letter-spacing: 1px;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    &:active,
+    &:focus {
+        background: transparent;
+    }
+}
+
+@media (min-width: 700px) {
+    .order__background-image-wrap {
+        width: 80%;
+    }
+    .order__wrap {
+        margin: 0 10vw;
+        width: 60vw;
+    }
+    .order__note {
+        font-size: 20px;
+    }
+}
